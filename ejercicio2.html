@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con números</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="exercise-page">
+    <main class="exercise-shell">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Volver al taller</a>
+
+        <header class="page-heading">
+            <p class="eyebrow">TALLER DE ARRAYS <span aria-hidden="true">•</span> EJERCICIO 02</p>
+            <h1>Operaciones con números</h1>
+            <p class="page-description">Registra una lista de números y consulta sus resultados al instante.</p>
+        </header>
+
+        <section class="entry-card" aria-labelledby="entry-title">
+            <div class="section-heading">
+                <span class="step-number" aria-hidden="true">01</span>
+                <div>
+                    <h2 id="entry-title">Añadir un número</h2>
+                    <p>Escribe el número que quieres incluir en la lista.</p>
+                </div>
+            </div>
+            <div class="entry-controls">
+                <label class="number-field" for="numero">
+                    <span>Número</span>
+                    <input type="number" id="numero" step="any" placeholder="Ej. 25">
+                </label>
+                <button class="add-button" type="button" onclick="agregarNumeros()">
+                    <span aria-hidden="true">+</span> Agregar número
+                </button>
+            </div>
+            <p class="helper-text"><span aria-hidden="true">✦</span> Puedes agregar números enteros o decimales.</p>
+        </section>
+
+        <section class="results-section" aria-label="Números y resultados">
+            <div class="section-heading results-heading">
+                <span class="step-number" aria-hidden="true">02</span>
+                <div>
+                    <h2>Números registrados</h2>
+                    <p>Los valores que has agregado aparecerán aquí.</p>
+                </div>
+            </div>
+            <ul class="number-list" id="lista"></ul>
+
+            <div class="summary-heading">
+                <h2>Resultados</h2>
+                <p>Resumen de las operaciones con tu lista.</p>
+            </div>
+            <div class="result-grid" aria-live="polite">
+                <p class="result-card" id="suma"></p>
+                <p class="result-card" id="promedio"></p>
+                <p class="result-card" id="mayor"></p>
+                <p class="result-card" id="menor"></p>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span>Tu lista se mantiene durante esta sesión.</span>
+            <span>ARRAYS / 02</span>
+        </footer>
+    </main>
+    <script src="js/ejercicio2.js"></script>
+</body>
+</html>

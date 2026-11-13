@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de nombres</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="exercise-page">
+    <main class="exercise-shell">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Volver al taller</a>
+
+        <header class="page-heading">
+            <p class="eyebrow">TALLER DE ARRAYS <span aria-hidden="true">•</span> EJERCICIO 01</p>
+            <h1>Registro de nombres</h1>
+            <p class="page-description">Organiza tus contactos en una lista clara y fácil de consultar.</p>
+        </header>
+
+        <section class="entry-card" aria-labelledby="entry-title">
+            <div class="section-heading">
+                <span class="step-number" aria-hidden="true">01</span>
+                <div>
+                    <h2 id="entry-title">Añadir una persona</h2>
+                    <p>Escribe el nombre que quieres registrar.</p>
+                </div>
+            </div>
+            <div class="entry-controls">
+                <label class="number-field" for="nombre">
+                    <span>Nombre completo</span>
+                    <input type="text" id="nombre" placeholder="Ej. Alex Rivera" autocomplete="name">
+                </label>
+                <button class="add-button" type="button" onclick="agregarNombre()">
+                    <span aria-hidden="true">+</span> Agregar
+                </button>
+            </div>
+            <p class="helper-text"><span aria-hidden="true">✦</span> Los nombres duplicados no se agregarán.</p>
+        </section>
+
+        <section class="results-section" aria-labelledby="people-title">
+            <div class="section-heading results-heading people-heading">
+                <div class="section-heading">
+                    <span class="step-number" aria-hidden="true">02</span>
+                    <div>
+                        <h2 id="people-title">Personas registradas</h2>
+                        <p>Tu lista aparecerá aquí.</p>
+                    </div>
+                </div>
+                <p class="count-badge" id="cantidad" aria-live="polite">Total nombres: 0</p>
+            </div>
+            <ul class="number-list" id="lista" aria-live="polite"></ul>
+        </section>
+
+        <footer class="page-footer">
+            <span>Tu lista se mantiene durante esta sesión.</span>
+            <span>ARRAYS / 01</span>
+        </footer>
+    </main>
+    <script src="js/ejercicio1.js"></script>
+</body>
+</html>

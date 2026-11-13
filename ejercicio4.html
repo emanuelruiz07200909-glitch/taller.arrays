@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de estudiantes</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="exercise-page">
+    <main class="exercise-shell">
+        <a class="back-link" href="index.html">
+            <span aria-hidden="true">←</span> Volver al taller
+        </a>
+
+        <header class="page-heading">
+            <p class="eyebrow">
+                TALLER DE ARRAYS <span aria-hidden="true">•</span> EJERCICIO 04
+            </p>
+            <h1>Buscador de estudiantes</h1>
+            <p class="page-description">Encuentra aquí los datos de los estudiantes.</p>
+        </header>
+
+        <section class="entry-card" aria-labelledby="entry-title">
+            <div class="section-heading">
+                <span class="step-number" aria-hidden="true">01</span>
+                <div>
+                    <h2 id="entry-title">Buscar un estudiante</h2>
+                    <p>Escribe el nombre del estudiante que quieres encontrar.</p>
+                </div>
+            </div>
+
+            <div class="entry-controls">
+                <label class="number-field" for="inputNombre">
+                    <span>Nombre del estudiante</span>
+                    <input
+                        type="text"
+                        id="inputNombre"
+                        placeholder="Ej. Juana Perez"
+                        autocomplete="name"
+                    >
+                </label>
+
+                <button class="add-button" type="button" onclick="buscarPersona()">
+                    Buscar
+                </button>
+            </div>
+
+            <p class="helper-text">
+                <span aria-hidden="true">✦</span>
+                Puedes buscar por nombre completo o una parte del nombre.
+            </p>
+        </section>
+
+        <section class="results-section" aria-labelledby="results-title">
+            <div class="section-heading results-heading">
+                <span class="step-number" aria-hidden="true"></span>
+                <div>
+                    <h2 id="results-title">Resultado de la búsqueda</h2>
+                    <p>La información del estudiante aparecerá aquí.</p>
+                </div>
+            </div>
+
+            <div id="cajaResultado" class="result-card" style="display: none;" aria-live="polite">
+                <div id="datosEncontrados" style="display: none;">
+                    <p><strong>Nombre:</strong> <span id="textoNombre"></span></p>
+                    <p><strong>Curso:</strong> <span id="textoCurso"></span></p>
+                    <p><strong>Edad:</strong> <span id="textoEdad"></span></p>
+                </div>
+
+                <p id="mensajeError" style="display: none;"></p>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span>Tu búsqueda se mantiene durante esta sesión.</span>
+            <span>ARRAYS / 04</span>
+        </footer>
+    </main>
+
+    <script src="js/ejercicio4.js"></script>
+</body>
+</html>
